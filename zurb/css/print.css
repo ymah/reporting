@@ -1,0 +1,105 @@
+@page {
+	@bottom-left {
+            content: counter(page) "/" counter(pages);
+        }
+    }
+
+@media print {
+    élément {
+	width: 100%;
+	word-wrap: break-word;
+    }
+    table {
+	background: none repeat scroll 0% 0% #FFF;
+	margin-bottom: 1.25rem;
+	border: 1px solid #FF6606;
+    }
+    table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+    }
+
+    élément {
+    }
+    table caption {
+	background: none repeat scroll 0% 0% transparent;
+	color: #222;
+	font-size: 1rem;
+	font-weight: bold;
+    }
+    élément {
+	background-color: #2A2A2A;
+    }
+    table thead {
+	background: none repeat scroll 0% 0% #2A2A2A;
+    }
+    *, *:before, *:after {
+	box-sizing: border-box;
+    }
+
+
+    table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
+	display: table-cell;
+	line-height: 1.125rem;
+    }
+    table thead tr th, table thead tr td {
+	padding: 0.5rem 0.625rem 0.625rem;
+	font-size: 0.875rem;
+	font-weight: bold;
+	color: #FFF;
+    }
+    table tr th, table tr td {
+	padding: 0.5625rem 0.625rem;
+	font-size: 0.875rem;
+	color: #222;
+	text-align: left;
+    }
+    div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+	margin: 0px;
+	padding: 0px;
+    }
+    td, th {
+	padding: 0px;
+    }
+    *, *:before, *:after {
+	box-sizing: border-box;
+    }
+
+    td:first-child{
+	background-color:#EEEEEE;
+    }
+    tr {
+
+	border-color:#FEA348;
+    }
+    td {
+	border:1px solid black;
+    }
+
+    #menu {
+	color: #008CBA;
+	text-decoration: none;
+	line-height: inherit;
+    }
+    #menu {
+	text-align:center;
+	background: none repeat scroll 0% 0% transparent;
+	font-size:1.3em;
+    }
+
+    #lienMenu {
+	color: #008CBA;
+	text-decoration: none;
+	line-height: inherit;
+    }
+    #lienMenu {
+	text-align:center;
+	background: none repeat scroll 0% 0% transparent;
+	font-size:1em;
+    }
+    
+    .page-break{ display: block; page-break-before: always; }
+    .hide-for-print{ display:none;}
+    hr {display:none;}
+
+}
